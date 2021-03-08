@@ -10,6 +10,10 @@ class MainAdapter(private val data: List<Hewan>) :
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(hewan: Hewan) = with(binding) {
+            namaTextView.text = hewan.nama
+            latinTextView.text = hewan.namaLatin
+            imageView.setImageResource(hewan.imageResId)
+
 
         }
     }

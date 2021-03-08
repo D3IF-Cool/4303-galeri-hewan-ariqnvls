@@ -4,6 +4,7 @@ import Hewan
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.recyclerview.widget.RecyclerView
 import org.d3if2091.galerihewan.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
         Log.d("MainActivity", "Jumlah data: " + getData().size)
     }
+
+    private fun setContentView(root: RecyclerView) {
+
+    }
+
     private fun getData(): List<Hewan> {
         return listOf(
             Hewan("Angsa", "Cygnus olor"),
